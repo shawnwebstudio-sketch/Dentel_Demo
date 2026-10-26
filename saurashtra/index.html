@@ -3,6 +3,7 @@
 <title>Saurashtra Mukhwas & Dry Fruits</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Hand-sorted dry fruits, house-made mukhwas and Diwali gift boxes from Saurashtra, delivered across India.">
+<link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hanken+Grotesk:wght@400;500;600;700&family=Tiro+Gujarati&family=DM+Mono:wght@400;500&display=swap">
@@ -473,12 +474,23 @@ select{background:var(--surface);color:var(--fg);border:1px solid var(--line);bo
 .cursor.big{width:64px;height:64px}
 @media(hover:hover) and (pointer:fine){.cursor{display:block}}
 
+
+/* preloader */
+.loader{position:fixed;inset:0;z-index:300;background:#0a120f;display:grid;place-items:center;animation:loaderOut .01s 3.2s forwards}
+.loader-in{display:flex;flex-direction:column;align-items:center;gap:22px}
+.loader img{width:min(220px,52vw);height:auto;filter:drop-shadow(0 0 30px rgba(226,168,69,.35))}
+.loader-bar{width:160px;height:1px;background:rgba(226,168,69,.2);overflow:hidden}
+.loader-bar i{display:block;height:100%;background:var(--gold);transform-origin:left;animation:fill 1.3s cubic-bezier(.6,0,.2,1) forwards}
+.loader small{font:500 11px/1 var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+@keyframes loaderOut{to{visibility:hidden;opacity:0}}
+.foot-logo{width:120px;height:auto;margin-bottom:8px}
 .reveal-clip{clip-path:inset(0 0 0 0)}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}.cursor{display:none!important}}
 </style>
 </head>
 <body>
 
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-in"><img src="img/logo.png" alt="" onerror="this.outerHTML='<span class=&quot;logo-mark&quot; style=&quot;width:96px;height:96px;font-size:52px&quot;>સ</span>'"><div class="loader-bar"><i></i></div><small>Saurashtra · Since generations</small></div></div>
 <div class="announce" aria-label="Offers"><div class="announce-track" id="announce"></div></div>
 
 <header class="hdr" id="hdr">
@@ -729,6 +741,7 @@ select{background:var(--surface);color:var(--fg);border:1px solid var(--line);bo
   <div class="wrap">
     <div class="foot-grid">
       <div>
+        <img class="foot-logo" src="img/logo.png" alt="Saurashtra Mukhwas &amp; Dry Fruits logo" onerror="this.remove()">
         <a href="#home" class="logo"><span class="logo-mark">સ</span><span class="logo-txt"><b>Saurashtra</b><small>Mukhwas &amp; Dry Fruits</small></span></a>
         <p class="muted" style="margin-top:18px;max-width:340px;font-size:15px">Hand-sorted dry fruits and house-made mukhwas from Saurashtra, Gujarat. Packed fresh and shipped across India.</p>
       </div>
@@ -1115,7 +1128,7 @@ function initMotion(){
     requestAnimationFrame(loop);
   })(t0);
   embers();
-  if(!G||RM) return;
+  if(!G||RM){$("#loader")?.remove();return}
   G.registerPlugin(ST);
   /* smooth scroll */
   if(window.Lenis){
@@ -1124,12 +1137,14 @@ function initMotion(){
     G.ticker.add(t=>lenis.raf(t*1000)); G.ticker.lagSmoothing(0);
   }
   /* intro */
-  const tl = G.timeline({defaults:{ease:"expo.out"}});
-  tl.from("#heroMedia",{scale:1.25,duration:2.4,ease:"power3.out"},0)
-    .from("#heroTitle .ch",{yPercent:115,rotate:8,duration:1.2,stagger:.022},.25)
-    .from("#heroGuj",{x:-30,opacity:0,duration:1},.4)
-    .from(["#heroSub","#heroCta > *","#heroMeta > *"],{y:24,opacity:0,duration:1,stagger:.07},.9)
-    .from(".hdr-in > *",{y:-20,opacity:0,duration:1,stagger:.08},.3);
+  const ld = $("#loader");
+  const tl = G.timeline({defaults:{ease:"expo.out"},delay:1.1});
+  tl.to(ld,{yPercent:-100,duration:1.1,ease:"expo.inOut",onComplete:()=>ld.remove()},0)
+    .from("#heroMedia",{scale:1.25,duration:2.4,ease:"power3.out"},0)
+    .from("#heroTitle .ch",{yPercent:115,rotate:8,duration:1.2,stagger:.022},.55)
+    .from("#heroGuj",{x:-30,opacity:0,duration:1},.7)
+    .from(["#heroSub","#heroCta > *","#heroMeta > *"],{y:24,opacity:0,duration:1,stagger:.07},1.2)
+    .from(".hdr-in > *",{y:-20,opacity:0,duration:1,stagger:.08},.6);
   /* hero parallax out */
   G.to("#heroMedia",{yPercent:18,scale:1.12,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:true}});
   G.to(".hero-in",{yPercent:-30,opacity:0,ease:"none",scrollTrigger:{trigger:"#hero",start:"30% top",end:"bottom top",scrub:true}});
