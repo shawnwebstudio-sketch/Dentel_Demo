@@ -1,0 +1,114 @@
+Jyotish Lok demo - image credits
+
+client-logo.png, client-og.png, client-kundali.png, client-booking.png
+  Source: https://jmtjyotishlok.com (client's own images, used with client's ownership)
+
+hero-night-sky.jpg
+  Title: Copper Breaks State Park with the Milky Way Galaxy.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Copper_Breaks_State_Park_with_the_Milky_Way_Galaxy.jpg
+  Licence: CC BY-SA 4.0
+  Author: Matthew T Rader
+
+diya.jpg
+  Title: Diya Diwali India.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Diya_Diwali_India.jpg
+  Licence: CC BY 2.0
+  Author: Subharnab Majumdar
+
+kundli.jpg
+  Title: Anthropomorphic images of constellations, painting from a folio of the work 'Sarvasiddhāntatattva-cuḍāmaṇi' (“The Jewel of the Essence of All Sciences”), 1840.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Anthropomorphic_images_of_constellations,_painting_from_a_folio_of_the_work_%27Sarvasiddh%C4%81ntatattva-cu%E1%B8%8D%C4%81ma%E1%B9%87i%27_(%E2%80%9CThe_Jewel_of_the_Essence_of_All_Sciences%E2%80%9D),_1840.jpg
+  Licence: Public domain
+  Author: Unknown
+
+palmistry.jpg
+  Title: Open Palm of the Left Hand, Fingers.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Open_Palm_of_the_Left_Hand,_Fingers.jpg
+  Licence: CC BY-SA 4.0
+  Author: Eyefive45
+
+vastu.jpg
+  Title: Diwali Decorations Kolam Rangoli Hyderabad India.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Diwali_Decorations_Kolam_Rangoli_Hyderabad_India.jpg
+  Licence: CC BY 2.0
+  Author: Abhinaba Basu
+
+puja.jpg
+  Title: Hindu pooja thali.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Hindu_pooja_thali.jpg
+  Licence: CC0
+  Author: suketdedhia
+
+shiva-trishul.jpg
+  Title: Image trishul.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Image_trishul.jpg
+  Licence: CC BY-SA 4.0
+  Author: Kalpitrai141
+
+temple.jpg
+  Title: Darasuram, Airavatesvara Temple, Mandapa at night 4, India.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Darasuram,_Airavatesvara_Temple,_Mandapa_at_night_4,_India.jpg
+  Licence: CC BY 4.0
+  Author: Vyacheslav Argenberg
+
+rudraksha.jpg
+  Title: RudrakshaBeads.jpg
+  Source: https://commons.wikimedia.org/wiki/File:RudrakshaBeads.jpg
+  Licence: CC BY-SA 4.0
+  Author: Merasmita
+
+gemstones.jpg
+  Title: Colored stones.JPG
+  Source: https://commons.wikimedia.org/wiki/File:Colored_stones.JPG
+  Licence: CC BY-SA 3.0
+  Author: Mauro Cateb
+
+bracelet.jpg
+  Title: Pulsera Japa Mala.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Pulsera_Japa_Mala.jpg
+  Licence: CC BY-SA 4.0
+  Author: Celiafp43
+
+mala.jpg
+  Title: Collar japa mala.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Collar_japa_mala.jpg
+  Licence: CC BY-SA 4.0
+  Author: Celiafp43
+
+karwa-chauth.jpg
+  Title: KarvaChauthMoon1.jpg
+  Source: https://commons.wikimedia.org/wiki/File:KarvaChauthMoon1.jpg
+  Licence: CC BY-SA 4.0
+  Author: CSG-Info
+
+navratri.jpg
+  Title: Durga, Burdwan, 2011.JPG
+  Source: https://commons.wikimedia.org/wiki/File:Durga,_Burdwan,_2011.JPG
+  Licence: CC BY-SA 3.0
+  Author: Joydeep
+
+havan.jpg
+  Title: Agni hotram fire ritual, Hindu culture religion rites rituals sights.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Agni_hotram_fire_ritual,_Hindu_culture_religion_rites_rituals_sights.jpg
+  Licence: CC BY 2.0
+  Author: balu from fremont, ca, usa
+
+astrologer.jpg
+  Title: Buddhist mala beads in nun's hand.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Buddhist_mala_beads_in_nun%27s_hand.jpg
+  Licence: CC BY-SA 3.0
+  Author: Beelerb
+
+moon.jpg
+  Title: Full Moon Luc Viatour.jpg
+  Source: https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg
+  Licence: CC BY-SA 3.0
+  Author: Luc Viatour
+
+planets.jpg
+  Title: Solar System collage background.png
+  Source: https://commons.wikimedia.org/wiki/File:Solar_System_collage_background.png
+  Licence: CC BY-SA 4.0
+  Author: NASA and ESA
+
+All stock photos from Wikimedia Commons. CC BY / CC BY-SA require visible attribution (e.g. a credits line in the site footer or a credits page).
