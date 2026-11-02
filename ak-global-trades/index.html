@@ -88,23 +88,23 @@ p{margin:0}
 main{min-height:60vh}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;height:min(92svh,900px);min-height:600px;margin-top:-72px;overflow:hidden;isolation:isolate;background:#0a120f}
+.hero{position:relative;min-height:min(92svh,900px);margin-top:-72px;display:flex;overflow:hidden;isolation:isolate;background:#0a120f}
 .hero-media{position:absolute;inset:-6% -2%;z-index:-3;will-change:transform}
-.hero-media img{width:100%;height:100%;object-fit:cover;animation:kb 24s ease-in-out infinite alternate;filter:saturate(1.08) contrast(1.05)}
-@keyframes kb{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.14) translate(-1.5%,-1%)}}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:60% 35%;animation:kb 24s ease-in-out infinite alternate;filter:saturate(1.08) contrast(1.05)}
+@keyframes kb{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.08) translate(-1%,-.5%)}}
 .hero-shade{position:absolute;inset:0;z-index:-2;background:
   linear-gradient(180deg,rgba(8,14,12,.55) 0%,rgba(8,14,12,.15) 35%,rgba(8,14,12,.55) 70%,var(--bg) 100%),
-  radial-gradient(120% 90% at 20% 60%,rgba(8,14,12,.75),transparent 60%)}
+  radial-gradient(120% 100% at 15% 60%,rgba(8,14,12,.88),rgba(8,14,12,.35) 65%,transparent 85%)}
 .hero-light{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:soft-light;
   background:radial-gradient(520px circle at var(--lx,70%) var(--ly,45%),rgba(255,190,90,var(--la,.85)),transparent 60%)}
 .hero-glow{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:screen;opacity:var(--lg,.35);
   background:radial-gradient(260px circle at var(--lx,70%) var(--ly,45%),rgba(255,160,60,.35),transparent 70%)}
 #embers{position:absolute;inset:0;z-index:0;pointer-events:none;width:100%;height:100%}
 .hero-grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.08;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(40px,8vh,96px);color:#f6ecdc}
+.hero-in{position:relative;z-index:2;flex:1;width:100%;padding-top:150px;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(40px,8vh,96px);color:#f6ecdc}
 .hero-guj{font:clamp(18px,2.4vw,26px)/1 var(--guj);color:var(--gold2);margin-bottom:18px;display:flex;align-items:center;gap:14px}
 .hero-guj::before{content:"";width:40px;height:1px;background:currentColor;opacity:.6}
-.hero h1{font-size:clamp(52px,10.5vw,148px);line-height:.92;max-width:11ch;color:#f6ecdc}
+.hero h1{font-size:clamp(46px,6.8vw,108px);line-height:.95;max-width:13ch;color:#f6ecdc}
 .hero h1 em{font-style:normal;color:var(--gold2);text-shadow:0 0 40px rgba(226,168,69,.35)}
 @keyframes shine{to{background-position:-250% 0}}
 .split .ch{display:inline-block;will-change:transform}
@@ -517,7 +517,7 @@ select{background:var(--surface);color:var(--fg);border:1px solid var(--line);bo
 <!-- ============ HOME ============ -->
 <section class="view" id="v-home" data-view="home">
   <div class="hero" id="hero">
-    <div class="hero-media" id="heroMedia"><img src="img/hero.jpg" alt="Bowls of almonds, cashews, pistachios and dried figs" onerror="this.parentNode.classList.add('noimg')"></div>
+    <div class="hero-media" id="heroMedia"><img src="img/market.jpg" alt="Dry fruit counter piled with nuts, dried fruit and sweets" onerror="this.parentNode.classList.add('noimg')"></div>
     <div class="hero-shade"></div>
     <div class="hero-light" id="heroLight"></div>
     <div class="hero-glow"></div>
@@ -629,7 +629,7 @@ select{background:var(--surface);color:var(--fg);border:1px solid var(--line);bo
   <section class="sec" style="padding-top:0">
     <div class="wrap">
       <div class="cta-band">
-        <img src="img/market.jpg" alt="" onerror="this.parentNode.classList.add('noimg')">
+        <img src="img/mixed-nuts.jpg" alt="" onerror="this.parentNode.classList.add('noimg')">
         <div class="eyebrow" style="color:var(--gold2)">Corporate &amp; wedding orders</div>
         <h2 style="margin-top:14px">Ordering 50 boxes or more?</h2>
         <p>Custom branding, bulk pricing and delivery to every address on your list. Send us your requirement on WhatsApp and get a quote within an hour.</p>
@@ -1140,7 +1140,7 @@ function initMotion(){
   const ld = $("#loader");
   const tl = G.timeline({defaults:{ease:"expo.out"},delay:1.1});
   tl.to(ld,{yPercent:-100,duration:1.1,ease:"expo.inOut",onComplete:()=>ld.remove()},0)
-    .from("#heroMedia",{scale:1.25,duration:2.4,ease:"power3.out"},0)
+    .from("#heroMedia",{scale:1.12,duration:2.4,ease:"power3.out"},0)
     .from("#heroTitle .ch",{yPercent:115,rotate:8,duration:1.2,stagger:.022},.55)
     .from("#heroGuj",{x:-30,opacity:0,duration:1},.7)
     .from(["#heroSub","#heroCta > *","#heroMeta > *"],{y:24,opacity:0,duration:1,stagger:.07},1.2)
